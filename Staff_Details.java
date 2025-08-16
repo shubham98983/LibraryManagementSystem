@@ -20,7 +20,7 @@ public class Staff_Details extends javax.swing.JFrame {
     public Staff_Details() {
         initComponents();
         setDefaultCloseOperation(Staff_Details.DISPOSE_ON_CLOSE);
-        back.addActionListener(this::fetchActionPerformed);
+        back.addActionListener(this::backActionPerformed);
     }
 
     /**
@@ -99,7 +99,7 @@ public class Staff_Details extends javax.swing.JFrame {
             while(rs.next()){
                 String staff      = rs.getString("Staff_Id");
                 String name       = rs.getString("Name");
-                int contact       = rs.getInt("Contact");
+                long contact       = rs.getLong("Contact");
                 model.addRow(new Object[]{staff,name,contact});
             }
             rs.close();
