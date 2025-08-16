@@ -17,6 +17,7 @@ public class Dashboard extends javax.swing.JFrame {
     public Dashboard() {
         initComponents();
         b2.addActionListener(this::b2ActionPerformed); 
+        b4.addActionListener(this::b4ActionPerformed);
     }
 
     /**
@@ -119,6 +120,10 @@ public class Dashboard extends javax.swing.JFrame {
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {                                   
         Add_Books add = new Add_Books();
         add.setVisible(true);
+    }
+    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {                                   
+       Staff_Details staff = new Staff_Details();
+       staff.setVisible(true);
     }
     /**
      * @param args the command line arguments
