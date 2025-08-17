@@ -21,6 +21,7 @@ public class Dashboard extends javax.swing.JFrame {
         b5.addActionListener(this::b5ActionPerformed);
         b3.addActionListener(this::b3ActionPerformed);
         b6.addActionListener(this::b6ActionPerformed);
+        b7.addActionListener(this::b7ActionPerformed);
     }
 
     /**
@@ -139,6 +140,10 @@ public class Dashboard extends javax.swing.JFrame {
     private void b6ActionPerformed(java.awt.event.ActionEvent evt) {                                   
         Remove_Staff removeStaff = new Remove_Staff();
         removeStaff.setVisible(true);
+    }
+    private void b7ActionPerformed(java.awt.event.ActionEvent evt) {                                   
+        Edit_Admin edit = new Edit_Admin();
+        edit.setVisible(true);
     }
     
     /**
